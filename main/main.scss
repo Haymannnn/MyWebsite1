@@ -1,0 +1,24 @@
+@import "./about/about.scss";
+@import "./contact/contact.scss";
+@import "./about/about.scss";
+@import "./photos/photos.scss";
+@import "./../footer/footer.scss";
+@import "./home/home.scss";
+
+main {
+    flex-grow: 1;
+    height: 100%;
+
+    padding-left: 173px;
+
+
+
+    section {
+        border: solid;
+
+    }
+
+    @media screen and (max-width:600px) {
+        padding: 20px 0;
+    }
+}
