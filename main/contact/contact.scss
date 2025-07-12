@@ -1,0 +1,47 @@
+#contact {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: #000000;
+    color: white;
+
+    .contact_block {
+        width: 95%;
+        margin: auto;
+
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+
+        h2,
+        p {
+            width: 100%;
+            text-align: justify;
+            line-height: 28px;
+            font-weight: 200;
+            a{
+                text-decoration: none;
+                 color: white;
+                
+            }
+        }
+
+        hr {
+            width: 120px;
+        }
+    }
+     
+         @media screen and (max-width:425px) {
+    
+             width: 100%;
+             padding: 20px;
+    
+             .contact_block {
+                 margin: 0;
+                 width: 100%;
+             }
+         }
+}
