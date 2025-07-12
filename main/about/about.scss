@@ -1,0 +1,190 @@
+#about {
+    width: 100%;
+    height: auto;
+    padding: 50px;
+    background: #000000;
+    color: white;
+
+    .about_blocks {
+        width: 95%;
+        margin: auto;
+        display: flex;
+        align-items: flex-start;
+        justify-content: center;
+        flex-direction: column;
+        gap: 20px;
+        padding: 20px 0;
+
+        h2,
+        p {
+            width: 100%;
+            text-align: justify;
+            line-height: 28px;
+            font-weight: 200;
+        }
+
+        hr {
+            width: 120px;
+        }
+
+        .progress {
+            width: 100%;
+            height: 30px;
+            background: white;
+
+            .progress_child1 {
+                width: 95%;
+                height: 100%;
+                background: rgb(160, 158, 158);
+            }
+
+            .progress_child2 {
+                width: 87%;
+                height: 100%;
+                background: rgb(160, 158, 158);
+            }
+
+            .progress_child3 {
+                width: 79%;
+                height: 100%;
+                background: rgb(160, 158, 158);
+            }
+        }
+
+        .statistic {
+            width: 100%;
+            background: rgb(214, 208, 208);
+            padding: 50px 0;
+            display: flex;
+            align-items: center;
+            justify-content: space-evenly;
+            flex-wrap: wrap;
+
+            label {
+                width: calc(100% / 4);
+                min-width: 142.42px;
+
+                color: black;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+
+                p {
+                    width: max-content;
+                }
+            }
+        }
+
+        a {
+            width: max-content;
+            padding: 10px 20px;
+            background: rgb(214, 208, 208);
+            text-decoration: none;
+            color: black;
+        }
+
+        .price {
+            width: 100%;
+            padding: 5px 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 20px;
+            color: black;
+
+            .price_block {
+                width: calc(100% / 2);
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                flex-direction: column;
+                background: grey;
+
+                h3 {
+                    width: 100%;
+                    text-align: center;
+                    padding: 20px 0;
+                    background-color: rgba(0, 0, 0, 0.59);
+                    color: white;
+                }
+
+                p {
+                    text-align: center;
+                    padding: 15px 0;
+                    border-bottom: .5px solid rgba(0, 0, 0, 0.59);
+
+                    strong {
+                        font-weight: 600;
+                    }
+                }
+
+                button {
+                    margin: 20px 0;
+                    padding: 10px 20px;
+                    border: none;
+                    background: rgba(67, 64, 64, 0.81);
+                }
+
+                &:hover {
+                    background: white;
+                }
+            }
+
+        }
+
+        .reputation {
+            width: 100%;
+            height: auto;
+            display: flex;
+            align-items: center;
+            justify-content: flex-start;
+            gap: 20px;
+
+            img {
+                width: 70px;
+                height: 70px;
+                border-radius: 50%;
+            }
+        }
+    }
+
+    @media screen and (max-width:900px) {
+        .statistic {
+            width: 100%;
+
+            label {
+                padding: 20px 0;
+                width: calc(100% / 2) !important;
+            }
+        }
+    }
+
+    @media screen and (max-width:600px) {
+        .price {
+            flex-wrap: wrap !important;
+
+            .price_block {
+                flex-grow: 1;
+            }
+        }
+    }
+    @media screen and (max-width:425px) {
+        padding: 20px;
+
+        .about_blocks {
+            width: 100%;
+
+            .statistic {
+                width: 100%;
+
+                label {
+                    width: 100% !important;
+                    padding: 30px 0;
+                }
+            }
+        }
+
+
+    }
+}
